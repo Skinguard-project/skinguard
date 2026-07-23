@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SkinGuard preliminary engineering testing, evidence scope, data-quality conditions, and limitations.">
+  <meta name="theme-color" content="#0d6f70">
+  <title>Testing | SkinGuard</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="SkinGuard home">
+          <img class="official-logo" src="assets/img/logo.png" alt="SkinGuard official shield and water-drop logo">
+          <span>SkinGuard</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="site-nav" aria-label="Primary navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="problem.html">Problem</a><a class="nav-link" href="system.html">System</a><a class="nav-link" href="development.html">Development</a><a class="nav-link active" href="testing.html">Testing</a><a class="nav-link" href="impact.html">Impact</a><a class="nav-link" href="team.html">Project Team</a><a class="nav-link" href="safety.html">Safety & Privacy</a></nav>
+      </div>
+    </header>
+  <main id="main">
+<section class="page-hero"><div class="shell narrow reveal"><p class="eyebrow">TESTING</p><h1>What we tested—and what the results do not prove</h1><p class="lead">Phase 1 testing looks at engineering feasibility and how the workflow behaves. It does not establish clinical equivalence, treatment benefit, causality, or health outcomes.</p></div></section>
+<section class="section"><div class="shell metric-grid">
+  <article class="metric reveal"><strong>7</strong><span>calibration states</span></article>
+  <article class="metric reveal delay-1"><strong>102</strong><span>sessions</span></article>
+  <article class="metric reveal delay-2"><strong>3</strong><span>users</span></article>
+  <article class="metric reveal delay-3"><strong>47</strong><span>participant-days</span></article>
+  <article class="metric reveal delay-4"><strong>510</strong><span>readings</span></article>
+</div></section>
+<section class="section compact-top"><div class="shell two-col"><div class="panel reveal"><p class="eyebrow">WHAT PHASE 1 CAN SUPPORT</p><h2>Engineering feasibility observations</h2><ul class="check-list"><li>An integrated end-to-end recording workflow was implemented.</li><li>Calibration states and repeated sessions exposed measurement-condition effects.</li><li>Small-scale longitudinal use helped identify workflow and interpretation gaps.</li><li>The redesign established a stronger basis for expanded user data collection.</li></ul></div><div class="panel warning-panel reveal delay-1"><p class="eyebrow">WHAT PHASE 1 CANNOT SUPPORT</p><h2>Clinical or outcome claims</h2><ul class="x-list"><li>No clinical equivalence</li><li>No diagnostic performance claim</li><li>No causality or treatment benefit</li><li>No flare or health-outcome prediction</li><li>No completed personalization validation</li></ul></div></div></section>
+<section class="section"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">TESTING FIGURES</p><h2>Selected results from Phase 1 testing</h2><p>The figures below show calibration, sampling behavior, and longitudinal observations. They support feasibility analysis within the stated small-sample limits; they do not establish clinical performance.</p></div><div class="testing-media-grid">
+  <figure class="evidence-figure reveal"><img src="assets/img/test-calibration.png" alt="Reference-linked sensor calibration curve and fit summary"><figcaption><strong>Calibration.</strong> A reference-linked curve was used to characterize device output across documented calibration states.</figcaption></figure>
+  <figure class="evidence-figure reveal delay-1"><img src="assets/img/test-sampling.png" alt="SkinGuard sampling and measurement-repeatability figure"><figcaption><strong>Sampling behavior.</strong> Repeated measurements helped expose variation associated with protocol and handling.</figcaption></figure>
+  <figure class="evidence-figure reveal delay-2"><img src="assets/img/test-longitudinal.png" alt="SkinGuard small-scale longitudinal observation figure"><figcaption><strong>Longitudinal use.</strong> Small-scale repeated records were used to identify workflow and interpretation gaps.</figcaption></figure>
+</div></div></section>
+<section class="section section-tint"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">DATA-QUALITY CONDITIONS</p><h2>Why measurement protocol matters</h2><p>Testing showed that readings are only useful for comparison when measurement conditions are recorded and controlled well enough to interpret variation.</p></div><div class="quality-grid">
+<article class="quality-card reveal"><h3>Position</h3><p>Measurements from different skin locations may not be directly comparable.</p></article>
+<article class="quality-card reveal delay-1"><h3>Contact & pressure</h3><p>Sensor contact and handling can affect repeatability.</p></article>
+<article class="quality-card reveal delay-2"><h3>Environment</h3><p>Ambient temperature and humidity provide important context.</p></article>
+<article class="quality-card reveal delay-3"><h3>Timing & routine</h3><p>Timing, recent activity, and care routines can influence interpretation.</p></article>
+</div></div></section>
+<section class="section"><div class="shell two-col"><div class="reveal"><p class="eyebrow">IMAGE-AI LIMITATIONS</p><h2>Prototype labels are not dermatologist-verified</h2><p>The public image dataset and labeling workflow support prototype model development, not clinical diagnosis. Representation, class balance, label quality, and generalizability remain important limitations.</p><a class="text-link" href="team.html">See AI contribution roles <span>→</span></a></div><div class="panel reveal delay-1"><h3>Phase 2 evidence priority</h3><p>Collect a substantially larger longitudinal user-use dataset under improved data-quality controls, then evaluate individual baselines, personalization hypotheses, function understandability, and weather context.</p><p class="note">Expanded user-use data will be treated as product and engineering validation—not automatically as clinical research.</p></div></div></section>
+</main>
+  <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html"><img class="official-logo" src="assets/img/logo.png" alt="SkinGuard official shield and water-drop logo"><span>SkinGuard</span></a>
+          <p class="muted">A student-led collaborative health-tech engineering project exploring longitudinal at-home skin monitoring.</p>
+        </div>
+        <div>
+          <p class="footer-label">Current boundary</p>
+          <p class="muted">Preliminary, non-diagnostic engineering prototype. No clinical-equivalence, treatment, causality, or health-outcome claims.</p>
+        </div>
+        <div>
+          <p class="footer-label">Status</p>
+          <p><span class="status completed">Phase 1 completed</span></p>
+          <p class="muted small">Phases 2–3 are planned work, not current capabilities.</p>
+        </div>
+      </div>
+      <div class="shell footer-bottom"><span>© 2026 SkinGuard Project</span><a href="safety.html">Safety & Privacy</a></div>
+    </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

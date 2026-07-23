@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SkinGuard integrated system architecture, current prototype, SCI, image AI, and planned capabilities.">
+  <meta name="theme-color" content="#0d6f70">
+  <title>System | SkinGuard</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="SkinGuard home">
+          <img class="official-logo" src="assets/img/logo.png" alt="SkinGuard official shield and water-drop logo">
+          <span>SkinGuard</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="site-nav" aria-label="Primary navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="problem.html">Problem</a><a class="nav-link active" href="system.html">System</a><a class="nav-link" href="development.html">Development</a><a class="nav-link" href="testing.html">Testing</a><a class="nav-link" href="impact.html">Impact</a><a class="nav-link" href="team.html">Project Team</a><a class="nav-link" href="safety.html">Safety & Privacy</a></nav>
+      </div>
+    </header>
+  <main id="main">
+<section class="page-hero"><div class="shell narrow reveal"><p class="eyebrow">SYSTEM</p><h1>How the parts of SkinGuard work together</h1><p class="lead">Phase 1 connects portable sensing, environmental context, image AI, an Android workflow, longitudinal storage, and the Skin Condition Index.</p></div></section>
+<section class="section"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">OVERALL ARCHITECTURE</p><h2>From repeated home measurements to a longitudinal record</h2><p>The current Phase 1 prototype covers daily sensing and image capture, multimodal data acquisition, the interpretable Skin Condition Index, trend monitoring, and structured records. Case-based personalization and guidance are shown as a future framework and have not yet been fully validated.</p></div><figure class="architecture architecture-paper reveal delay-1"><img src="assets/img/overall-architecture.png" alt="Overall SkinGuard architecture showing daily home use, sensing and data acquisition, the Skin Condition Index, longitudinal records, and planned personalization"><figcaption><strong>Overall system architecture.</strong> Solid Phase 1 components are separated from the planned personalization layer. The diagram is adapted from the SkinGuard system paper.</figcaption></figure></div></section>
+<section class="section section-tint"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">ORIGINAL DESIGN SLIDES</p><h2>Three connected layers guide the system design</h2><p>These project slides show the logic behind SkinGuard: sensing and image inputs feed the SCI, daily records build a personal history, and later phases will test personalized and forecast-informed guidance. The third layer is planned work, not a completed capability.</p></div><div class="design-slide-grid">
+  <figure class="evidence-figure design-slide reveal"><img src="assets/img/patent-system-architecture.png" alt="Original SkinGuard slide showing three connected layers: sensing, SCI, and planned personalization"><figcaption><strong>Three-layer architecture.</strong> Purpose-built sensing and the SCI are represented in Phase 1; the personalization layer remains planned.</figcaption></figure>
+  <figure class="evidence-figure design-slide reveal delay-1"><img src="assets/img/patent-daily-workflow.png" alt="Original SkinGuard slide showing the daily workflow from measurements and image analysis to the SCI and longitudinal history"><figcaption><strong>Daily workflow.</strong> Measurements, image analysis, context, and history are organized through the SCI.</figcaption></figure>
+  <figure class="evidence-figure design-slide reveal delay-2"><img src="assets/img/patent-personalization.png" alt="Original SkinGuard slide showing planned case-based personalization and weather context"><figcaption><strong>Planned personalization.</strong> Future work will test whether a user’s own history and weather context improve useful guidance.</figcaption></figure>
+</div></div></section>
+<section class="section compact-top"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">WORKING PROTOTYPE</p><h2>The architecture is backed by a physical system</h2><p>These photographs document the current Phase 1 sensing hardware and its connection to the Android measurement workflow. They show the engineering prototype—not a finished consumer or medical device.</p></div><div class="evidence-media-grid">
+  <figure class="evidence-figure reveal"><img src="assets/img/prototype-system.png" alt="Working SkinGuard sensing prototype beside the Android measurement application"><figcaption><strong>Integrated prototype.</strong> Portable sensing hardware records measurements for the Android workflow.</figcaption></figure>
+  <figure class="evidence-figure reveal delay-1"><img src="assets/img/hardware-annotated.jpg" alt="Annotated SkinGuard hardware showing the monitor, Bluetooth module, MCU, environmental sensor, skin-humidity sensor, and power management"><figcaption><strong>Hardware implementation.</strong> The annotated board identifies the major sensing, processing, communication, and power components.</figcaption></figure>
+</div></div></section>
+<section class="section compact-top"><div class="shell system-cards">
+  <article class="system-card reveal"><div class="system-icon">S</div><h2>Portable sensing</h2><p>Skin-hydration measurements are recorded alongside measurement quality and environmental context.</p><span class="status completed">BUILT</span></article>
+  <article class="system-card reveal delay-1"><div class="system-icon">AI</div><h2>Image analysis</h2><p>A prototype image model provides one structured visual input. Labels are not dermatologist-verified and have known representation limits.</p><span class="status completed">BUILT</span></article>
+  <article class="system-card reveal delay-2"><div class="system-icon">SCI</div><h2>Skin Condition Index</h2><p>The SCI combines hydration, environment, longitudinal history, and image-model output into a system-level state and trend framework.</p><span class="status completed">BUILT</span></article>
+  <article class="system-card reveal delay-3"><div class="system-icon">APP</div><h2>Android workflow</h2><p>The application integrates Bluetooth data collection, local records, context entry, trend review, and cloud-connected analysis functions.</p><span class="status completed">BUILT</span></article>
+</div></section>
+<section class="section section-tint"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">BUILT NOW VS. FUTURE</p><h2>What works now—and what comes next</h2></div><div class="comparison-table reveal"><div class="table-row table-head"><div>Capability</div><div>Current status</div><div>Public wording</div></div>
+<div class="table-row"><div><strong>Sensing, environment, image AI, Android, SCI</strong></div><div><span class="status completed">IMPLEMENTED</span></div><div>Integrated and preliminarily tested</div></div>
+<div class="table-row"><div><strong>Individual baselines and personalized functions</strong></div><div><span class="status planned">PHASE 2</span></div><div>Hypotheses/functions to be tested with expanded longitudinal data</div></div>
+<div class="table-row"><div><strong>Weather forecast integration</strong></div><div><span class="status planned">PHASE 2</span></div><div>Forecast-informed contextual input; not flare prediction</div></div>
+<div class="table-row"><div><strong>Device consistency and product readiness</strong></div><div><span class="status planned">PHASE 3</span></div><div>Toward repeatability, reliability, and manufacturability</div></div>
+</div></div></section>
+<section class="section"><div class="shell two-col align-center"><div class="reveal"><p class="eyebrow">SYSTEM-LEVEL LOGIC</p><h2>Image AI is one part of the system</h2><p>The SCI brings together skin hydration, environmental data, personal history, measurement quality, and image analysis. This keeps SkinGuard focused on how the whole system works instead of presenting the image model as the entire project.</p></div><div class="panel reveal delay-1"><h3>Inputs to the SCI</h3><div class="pill-list"><span>Hydration</span><span>Temperature</span><span>Humidity</span><span>Image analysis</span><span>Personal history</span><span>Measurement quality</span></div><p class="muted small">Phase 2 will test whether individual baselines and weather context add useful information.</p></div></div></section>
+<section class="section compact-top"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">SCI IN THE APP</p><h2>Repeated inputs become a simple status and trend view</h2><p>The current interface shows different SCI states with supporting context. These screens help users review patterns; they are not diagnoses or treatment recommendations.</p></div><div class="sci-screen-grid"><figure class="evidence-figure reveal"><img src="assets/img/sci-state-0.png" alt="SkinGuard Android app showing a lower SCI state"><figcaption>Lower SCI state</figcaption></figure><figure class="evidence-figure reveal delay-1"><img src="assets/img/sci-state-1.png" alt="SkinGuard Android app showing an intermediate SCI state"><figcaption>Intermediate SCI state</figcaption></figure><figure class="evidence-figure reveal delay-2"><img src="assets/img/sci-state-2.png" alt="SkinGuard Android app showing a higher-attention SCI state"><figcaption>Higher-attention SCI state</figcaption></figure></div></div></section>
+</main>
+  <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html"><img class="official-logo" src="assets/img/logo.png" alt="SkinGuard official shield and water-drop logo"><span>SkinGuard</span></a>
+          <p class="muted">A student-led collaborative health-tech engineering project exploring longitudinal at-home skin monitoring.</p>
+        </div>
+        <div>
+          <p class="footer-label">Current boundary</p>
+          <p class="muted">Preliminary, non-diagnostic engineering prototype. No clinical-equivalence, treatment, causality, or health-outcome claims.</p>
+        </div>
+        <div>
+          <p class="footer-label">Status</p>
+          <p><span class="status completed">Phase 1 completed</span></p>
+          <p class="muted small">Phases 2–3 are planned work, not current capabilities.</p>
+        </div>
+      </div>
+      <div class="shell footer-bottom"><span>© 2026 SkinGuard Project</span><a href="safety.html">Safety & Privacy</a></div>
+    </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
