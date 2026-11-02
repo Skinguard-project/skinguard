@@ -9,22 +9,14 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="portfolio.css?v=20261101">
 </head>
-<body class="">
+<body class="tech-site" id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-      <div class="shell header-inner">
-        <a class="brand" href="index.html" aria-label="SkinGuard home">
-          <img class="official-logo" src="assets/img/logo.png" alt="SkinGuard official shield and water-drop logo">
-          <span>SkinGuard</span>
-        </a>
-        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-        <nav class="site-nav" aria-label="Primary navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="problem.html">Problem</a><a class="nav-link active" href="system.html">System</a><a class="nav-link" href="development.html">Development</a><a class="nav-link" href="testing.html">Testing</a><a class="nav-link" href="impact.html">Impact</a><a class="nav-link" href="team.html">Project Team</a><a class="nav-link" href="safety.html">Safety & Privacy</a></nav>
-      </div>
-    </header>
+  <header class="p-header"><div class="p-wrap p-header-inner"><a class="p-wordmark" href="index.html"><span class="p-monogram" aria-hidden="true">HW<span>·</span></span><span>Henry Wang<small>HANCHENG WANG</small></span></a><button class="p-menu" aria-label="Open navigation" aria-expanded="false" aria-controls="portfolio-nav">Menu <span aria-hidden="true">＋</span></button><nav id="portfolio-nav" class="p-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="skinguard.html" aria-current="page">SkinGuard</a><a href="community.html">Community</a><a href="badminton.html">Badminton</a><a href="summer.html">Summer programs</a><a href="about.html">About me</a></nav></div></header><div class="p-project-nav"><div class="p-wrap"><a class="p-project-brand" href="skinguard.html"><img src="assets/img/logo.png" alt="">SkinGuard</a><nav aria-label="SkinGuard project navigation"><a href="skinguard.html">Overview</a><a href="problem.html">Problem</a><a href="system.html" aria-current="page">System</a><a href="development.html">Development</a><a href="testing.html">Testing</a><a href="impact.html">Impact</a><a href="team.html">Project team</a><a href="safety.html">Safety & privacy</a></nav></div></div>
   <main id="main">
 <section class="page-hero"><div class="shell narrow reveal"><p class="eyebrow">SYSTEM</p><h1>How the parts of SkinGuard work together</h1><p class="lead">Phase 1 connects portable sensing, environmental context, image AI, an Android workflow, longitudinal storage, and the Skin Condition Index.</p></div></section>
-<section class="section"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">OVERALL ARCHITECTURE</p><h2>From repeated home measurements to a longitudinal record</h2><p>The current Phase 1 prototype covers daily sensing and image capture, multimodal data acquisition, the interpretable Skin Condition Index, trend monitoring, and structured records. Case-based personalization and guidance are shown as a future framework and have not yet been fully validated.</p></div><figure class="architecture architecture-paper reveal delay-1"><img src="assets/img/overall-architecture.png" alt="Overall SkinGuard architecture showing daily home use, sensing and data acquisition, the Skin Condition Index, longitudinal records, and planned personalization"><figcaption><strong>Overall system architecture.</strong> Solid Phase 1 components are separated from the planned personalization layer. The diagram is adapted from the SkinGuard system paper.</figcaption></figure></div></section>
+<section class="section compact-top"><div class="shell"><div class="section-heading"><p class="eyebrow">THE HARDWARE, UP CLOSE</p><h2>A prototype you can inspect</h2><p>Two views of the physical SkinGuard device. The existing system diagrams below explain how its components connect.</p></div><div class="p-gallery p-two"><figure class="p-photo p-contain"><a class="p-photo-open" href="portfolio-sg-device-1.jpg" data-photo aria-label="Enlarge: Controller and live display"><img src="portfolio-sg-device-1.jpg" alt="Controller and live display" class="" loading="lazy" decoding="async"></a><figcaption><strong>Controller and live display</strong><span>SkinGuard’s prototype electronics and on-device measurement display.</span></figcaption></figure><figure class="p-photo p-contain"><a class="p-photo-open" href="portfolio-sg-device-2.jpg" data-photo aria-label="Enlarge: A second hardware view"><img src="portfolio-sg-device-2.jpg" alt="A second hardware view" class="" loading="lazy" decoding="async"></a><figcaption><strong>A second hardware view</strong><span>The board, controller, and display as assembled in the prototype.</span></figcaption></figure></div></div></section><section class="section"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">OVERALL ARCHITECTURE</p><h2>From repeated home measurements to a longitudinal record</h2><p>The current Phase 1 prototype covers daily sensing and image capture, multimodal data acquisition, the interpretable Skin Condition Index, trend monitoring, and structured records. Case-based personalization and guidance are shown as a future framework and have not yet been fully validated.</p></div><figure class="architecture architecture-paper reveal delay-1"><img src="assets/img/overall-architecture.png" alt="Overall SkinGuard architecture showing daily home use, sensing and data acquisition, the Skin Condition Index, longitudinal records, and planned personalization"><figcaption><strong>Overall system architecture.</strong> Solid Phase 1 components are separated from the planned personalization layer. The diagram is adapted from the SkinGuard system paper.</figcaption></figure></div></section>
 <section class="section section-tint"><div class="shell"><div class="section-heading reveal"><p class="eyebrow">ORIGINAL DESIGN SLIDES</p><h2>Three connected layers guide the system design</h2><p>These project slides show the logic behind SkinGuard: sensing and image inputs feed the SCI, daily records build a personal history, and later phases will test personalized and forecast-informed guidance. The third layer is planned work, not a completed capability.</p></div><div class="design-slide-grid">
   <figure class="evidence-figure design-slide reveal"><img src="assets/img/patent-system-architecture.png" alt="Original SkinGuard slide showing three connected layers: sensing, SCI, and planned personalization"><figcaption><strong>Three-layer architecture.</strong> Purpose-built sensing and the SCI are represented in Phase 1; the personalization layer remains planned.</figcaption></figure>
   <figure class="evidence-figure design-slide reveal delay-1"><img src="assets/img/patent-daily-workflow.png" alt="Original SkinGuard slide showing the daily workflow from measurements and image analysis to the SCI and longitudinal history"><figcaption><strong>Daily workflow.</strong> Measurements, image analysis, context, and history are organized through the SCI.</figcaption></figure>
@@ -52,7 +44,7 @@
   <footer class="site-footer">
       <div class="shell footer-grid">
         <div>
-          <a class="brand footer-brand" href="index.html"><img class="official-logo" src="assets/img/logo.png" alt="SkinGuard official shield and water-drop logo"><span>SkinGuard</span></a>
+          <a class="brand footer-brand" href="skinguard.html"><img class="official-logo" src="assets/img/logo.png" alt="SkinGuard official shield and water-drop logo"><span>SkinGuard</span></a>
           <p class="muted">A student-led collaborative health-tech engineering project exploring longitudinal at-home skin monitoring.</p>
         </div>
         <div>
@@ -68,5 +60,6 @@
       <div class="shell footer-bottom"><span>© 2026 SkinGuard Project</span><a href="safety.html">Safety & Privacy</a></div>
     </footer>
   <script src="assets/js/main.js"></script>
+<script src="portfolio.js?v=20261101"></script>
 </body>
 </html>
